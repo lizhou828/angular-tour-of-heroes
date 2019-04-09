@@ -1,0 +1,13 @@
+<div *ngIf="hero">
+
+  <h2>{{hero.name | uppercase}} 出场了</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+
+      <!-- [(ngModel)]  是angular的双向绑定功能 -->
+    </label>
+  </div>
+
+</div>
